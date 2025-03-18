@@ -1,0 +1,16 @@
+<?php
+
+$nome = "Gabriel";
+$altura = 1.81;
+$prof = "Estudante";
+$cid_nasc = "Guarulhos";
+$país = "Brasil";
+$ano_atual = 2025;
+$ano_nasc = 2007;
+
+$idade = $ano_atual - $ano_nasc;
+
+echo "Meu nome é " . $nome . " eu tenho " . $altura . "m de altura, atualmente eu sou um " . $prof . " da Etec de " . $cid_nasc . ". Eu nasci no " . $país . ", na cidade de "
+. $cid_nasc . ". Eu nasci no ano de " . $ano_nasc . " e hoje estamos no ano de " . $ano_atual . ", logo conclui-se que eu tenho ou irei completar " . $idade . " anos de idade nesse ano.";
+
+?>
