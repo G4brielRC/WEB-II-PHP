@@ -1,0 +1,15 @@
+<?php
+$nome = "Gabriel";
+$sobrenome = "R. Crepaldi";
+$idade = "17";
+$escola = "Etec de Guarulhos";
+$curso = "ADS";
+$hobbie = "Jogar Videogame";
+$hrs = "70";
+$dias = "45";
+
+$nome_completo =  $nome . " " . $sobrenome;
+
+echo "Meu nome é " . $nome_completo . ", eu tenho " . $idade . " anos de idade, estudo na " . $escola . "no curso de " . $curso . ". " . "No tempo livre eu gosto de " . $hobbie . ", O último jogo que joguei tinha " . $hrs . " horas de duração e eu demorei " . $dias . " dias para zerar";  
+
+?>
