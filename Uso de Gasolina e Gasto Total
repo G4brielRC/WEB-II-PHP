@@ -1,0 +1,22 @@
+<?php
+
+echo "----------------DISTANCIA-CONSUMO-GASOLINA-------------\n";
+
+echo "Digite a distância de sua viagem em km\n";
+$distancia = (float) readline();
+
+echo "Digite o consumo do seu carro em km/litro\n";
+$consumo = (float) readline();
+
+echo "Digite o preço da gasolina em R$/litro\n";
+$preco = (float) readline();
+
+$uso_litros = ($distancia / $consumo);
+
+$gasto_total = ($uso_litros * $preco);
+
+echo "A quantidade de litros de gasolina necessário para fazer essa viagem é de: " . number_format ($uso_litros, 3) . " litros.\n";
+
+echo "O gasto total será de " . number_format ($gasto_total, 3) . " R$\n";
+
+?>
