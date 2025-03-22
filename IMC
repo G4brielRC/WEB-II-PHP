@@ -11,6 +11,6 @@ $altura = (float) readline();
 
 $imc = $peso / ($altura * $altura);
 
-echo "Seu IMC é igual a: " . $imc;
+echo "Seu IMC é igual a: " . number_format ($imc, 2);
 
 ?>
