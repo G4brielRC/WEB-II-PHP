@@ -1,0 +1,16 @@
+<?php
+
+echo "----------------IMC----------------\n";
+echo "Digite seu peso em Kg: ";
+
+$peso = (float) readline();
+
+echo "Digite sua altura em metros: ";
+
+$altura = (float) readline();
+
+$imc = $peso / ($altura * $altura);
+
+echo "Seu IMC é igual a: " . $imc;
+
+?>
