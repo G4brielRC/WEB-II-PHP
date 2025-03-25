@@ -1,0 +1,24 @@
+<?php
+
+echo "-------------SENHA--------------\n";
+
+echo "Digite sua senha: ";
+$senha = (float) readline();
+
+for ($i = 1; $i <= 5; $i++){
+    echo "\nTentativa $i de 5\n";
+echo "Disite sua senha: ";
+$tentativa = (float) readline();
+
+    if ($tentativa == $senha) {
+        echo "Acesso liberado!\n";
+        break;
+    }
+    
+    else{
+        echo" Acesso negado!\n";
+    }
+}
+
+    
+?>
