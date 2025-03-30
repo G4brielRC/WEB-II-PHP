@@ -1,0 +1,30 @@
+using System;
+using System.Linq;
+
+class Program {
+    
+  static void Main() {
+      
+    Console.WriteLine("--------------------------------------");  
+    Console.WriteLine("---------- NOTAS DOS ALUNOS ----------");
+    Console.WriteLine("--------------------------------------");
+    
+    string[] alunos = { "João", "Maria", "Pedro", "Ana", "Paulo", "Júlio", "Giovana" };
+        
+        double[] notas = { 6.5, 8.2, 6.3, 9.1, 6.2, 7.4, 7.8 };
+
+        double media = notas.Average();
+        
+        int indiceMelhor = Array.IndexOf(notas, notas.Max());
+        
+        int indicePior = Array.IndexOf(notas, notas.Min());
+
+        Console.WriteLine($"Média da turma: {media:F1}");
+        
+        Console.WriteLine($"Melhor aluno: {alunos[indiceMelhor]} com {notas[indiceMelhor]}");
+        
+        Console.WriteLine($"Pior aluno: {alunos[indicePior]} com {notas[indicePior]}");
+    
+  }
+ 
+}
