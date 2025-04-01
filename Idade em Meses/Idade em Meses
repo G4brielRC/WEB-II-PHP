@@ -1,0 +1,22 @@
+<?php
+
+echo "---------IDADE-EM-MESES---------\n";
+
+function calcularIdadeEmMeses($dataNascimento) {
+    
+    $dataNascimento_obj = new DateTime($dataNascimento);
+
+    $dataAtual = new DateTime();
+
+    $diferenca = $dataNascimento_obj->diff($dataAtual);
+
+    return ($diferenca->y * 12) + $diferenca->m;
+}
+
+$dataNascimento = readline("Informe sua data de nascimento (DD-MM-AAAA): ");
+
+$idadeEmMeses = calcularIdadeEmMeses($dataNascimento);
+
+echo "Idade em meses: $idadeEmMeses\n";
+
+?>
