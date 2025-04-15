@@ -1,0 +1,18 @@
+<?php
+$host =
+'localhost';  // enderereço do host
+$db =
+'crud_php'; //database acessado
+$user =
+'root';     // nome do usuario
+$pass =     
+'';          // password do usuario
+try {
+$pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8" // tentativa
+, $user,
+$pass);
+} catch (PDOException $e) {
+echo "Erro na conexão: " . $e->getMessage();
+exit;
+}
+?>
